@@ -1,9 +1,10 @@
 import React from'react';
 import ReactDom from'react-dom';
-import HelloWorld from'./components/HelloWorld';
-ReactDom.render()
+import Header from './components/Header';
+// import Header from './components/Header';
 
-ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+
+ReactDOM.render(<Header />, document.getElementById('app'));
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
