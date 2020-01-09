@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header';
-// import Header from './components/Header';
+import App from './containers/App'
 
-
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
