@@ -14,24 +14,27 @@ const App = () => {
     .then(response =>response.json())
     .then(data => setVideos(data));
   },[]);
-  console.log({ videos })
+  // console.log({ videos })
   return (
     <div className="app">
       <Header />
       <Search />
-      <Categories title="Mi lista">
+
+      {videos.mylist.length >0 &&
+        <Categories title="Mi lista">
         <Carousel>
           <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+
         </Carousel>
       </Categories>
+      }
+
+
 
       <Categories title="Tendencias">
         <Carousel>
           <CarouselItem />
-          <CarouselItem />
+
         </Carousel>
       </Categories>
 
